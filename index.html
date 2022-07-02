@@ -1,12 +1,67 @@
-<div>
-  <h1>Welcome to TeleHero!</h1>
-  <br/>
-  <div style="display:flex;flex-direction:row;">
-    <div> 
-      <p>Lorem ipsum</p>
+<html>
+
+<head>
+    <title>TeleHero</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+        h1 {
+            /* font-family: Helvetica, Arial, sans-serif;
+             */
+            font-family: Source Sans Pro, Helvetica, Arial;
+            font-size: xxx-large;
+            font-weight: 900;
+        }
+
+        p {
+            font-family: Source Sans Pro, Helvetica, Arial;
+            font-size: 15pt;
+            color: rgb(40, 40, 40);
+        }
+
+        body {
+            background-image: url("bg.png");
+            background-repeat: repeat-y;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; width: 100%;
+    justify-content: center;">
+        <div style=" flex-direction: column;
+        display: inline-block; display: flex; align-items: center;">
+            <h1>Welcome to TeleHero!</h1>
+            <br />
+            <div style="display:flex;flex-direction:row; flex-wrap: wrap;">
+                <div style="max-width: 250px">
+                    <br />
+                    <p>TeleHero is an app that can help you filter through the many TeleHealth providers in Ontario to
+                        find the one that best fits your needs.</p>
+
+                    <p>Whether you need to find an online dermatologist to speak with, a doctor to get a referral or
+                        a
+                        sick note from, or a nurse to speak with anonymously about health matters, TeleHero can help you
+                        find the right resource.</p>
+                    <br />
+                    <a href="https://apps.apple.com/us/app/telehero-the-telehealth-guide/id1629310524" target="#"
+                        style="padding: 16px 32px;  border-radius: 8px; 
+                                    font-family: Source Sans Pro, Helvetica, Arial; color: white; font-size: large; text-decoration: none;
+                                    background-image: linear-gradient(to bottom,rgba(12, 158, 231, 1) 0%,rgba(15, 36, 194, 1) 100%);">
+                        Download Now on iOS
+                    </a>
+                </div>
+
+                <div>
+                    <img src="./screenshot.webp" height="674" width="361" />
+                </div>
+            </div>
+
+            <br />
+            <p>For support, please email <b>kevin (at) kevintaba (dot) com</b></p>
+        </div>
     </div>
-    <div> 
-      <p>This is going to be a picture</p>
-    </div>
-  </div>
-</div>
+</body>
+
+</html>
