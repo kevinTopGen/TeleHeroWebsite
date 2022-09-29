@@ -4,13 +4,19 @@
     <title>TeleHero</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:bold');
+        @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:black');
+
 
         h1 {
             /* font-family: Helvetica, Arial, sans-serif;
              */
             font-family: Source Sans Pro, Helvetica, Arial;
-            font-size: xxx-large;
+            font-size: 60px;
             font-weight: 900;
+            text-align: center;
+            z-index: -2;
+
         }
 
         p {
@@ -19,10 +25,22 @@
             color: rgb(40, 40, 40);
         }
 
-        body {
+        b {
+            font-family: Source Sans Pro, Helvetica, Arial;
+            font-weight: 700;
+            font-size: 15pt;
+            color: rgb(40, 40, 40);
+            color: white;
+        }
+
+        /* body {
             background-image: url("bg.png");
             background-repeat: repeat-y;
             background-repeat: repeat-x;
+        } */
+
+        body {
+            background-image: linear-gradient(to bottom, #004e92 0%, #000428 100%)
         }
     </style>
 </head>
@@ -32,9 +50,14 @@
     justify-content: center;">
         <div style=" flex-direction: column;
         display: inline-block; display: flex; align-items: center;">
-            <h1>Welcome to TeleHero!</h1>
+
+            <h1 style="padding: 46px 0px 150px 0px; width:100%; background-color: white; position: absolute;
+            margin-top: -8px; color: #00305b; ">Welcome to TeleHero!
+            </h1>
             <br />
-            <div style="display:flex;flex-direction:row; flex-wrap: wrap;">
+            <div style="display:flex;flex-direction:row; flex-wrap: wrap; background-color: white;
+            border-radius: 15px; padding: 8px 4px 8px 32px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            margin-top: 150px;">
                 <div style="max-width: 250px">
                     <br />
                     <p>TeleHero is an app that can help you filter through the many TeleHealth providers in Ontario to
@@ -59,7 +82,24 @@
             </div>
 
             <br />
-            <p>For support, please email <b>kevin (at) kevintaba (dot) com</b></p>
+            <div>
+                <p style="color:white;">For support, please email <b>kevin (at) kevintaba (dot) com</b></p>
+                <br />
+                <hr style='color:white' />
+                <br />
+
+            </div>
+            <br />
+            <div style="margin-bottom: 24px; background-color: white; border-radius: 5px;
+            padding: 2px 5px;">
+                <b style="color: #192a56">TEAM</b>
+            </div>
+            <b>Kevin Tabatabaei</b>
+            <p style="color:white;">Founder, creator</p>
+            <br />
+            <b>Krisha Malik</b>
+            <p style="color:white;">Design and data collection</p>
+            <br />
         </div>
     </div>
 </body>
